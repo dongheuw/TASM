@@ -9,14 +9,14 @@ Prototype implementation of TASM, which is a tile-based storage manager video an
 `git submodule update`  
 
 # Building Docker container
-`docker build -t tasm/environment -f docker/Dockerfile.environment  .` (try running it with `sudo` if you got permission denied)
+`docker build -t tasm/environment -f docker/Dockerfile.environment  .`
 `docker build -t tasm/tasm -f docker/Dockerfile .`  
 
 # Running the example notebook in the Docker container
 By default, the Docker container opens to the `python/Examples` directory which comes with a notebook that walks through
 the basics of interacting with TASM. 
 
-On the machine with a GPU:   
+On the machine with an encode-capable GPU (https://developer.nvidia.com/video-encode-and-decode-gpu-support-matrix-new#Encoder):   
 1. `docker run --rm -it --runtime=nvidia -p 8890:8890 --name tasm tasm/tasm:latest /bin/bash`  
 2. `jupyter notebook --ip 0.0.0.0 --port 8890 --allow-root &` (in the Docker environment)
  
