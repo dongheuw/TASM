@@ -3,8 +3,13 @@
 Prototype implementation of TASM, which is a tile-based storage manager video analytics. See the [paper](https://arxiv.org/abs/2006.02958) for more details.
 
 # Cloning
+<<<<<<< HEAD
 `git clone https://github.com/uwdb/TASM.git`
 `cd TASM`
+=======
+`git clone https://github.com/uwdb/TASM.git`  
+`cd TASM`  
+>>>>>>> c10da13550436597d15136013b63fc3cad12d327
 `git submodule init`  
 `git submodule update`  
 
