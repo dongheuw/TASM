@@ -9,7 +9,7 @@ Prototype implementation of TASM, which is a tile-based storage manager video an
 `git submodule update`  
 
 # Building Docker container
-`docker build -t tasm/environment -f docker/Dockerfile.environment  .`
+`docker build -t tasm/environment -f docker/Dockerfile.environment  .`  
 `docker build -t tasm/tasm -f docker/Dockerfile .`  
 
 # Running the example notebook in the Docker container
