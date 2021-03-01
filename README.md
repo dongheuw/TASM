@@ -3,12 +3,13 @@
 Prototype implementation of TASM, which is a tile-based storage manager video analytics. See the [paper](https://arxiv.org/abs/2006.02958) for more details.
 
 # Cloning
-`git clone`  
+`git clone https://github.com/uwdb/TASM.git`
+`cd TASM`
 `git submodule init`  
 `git submodule update`  
 
 # Building Docker container
-`docker build -t tasm/environment -f docker/Dockerfile.environment  .`  
+`docker build -t tasm/environment -f docker/Dockerfile.environment  .` (try running it with `sudo` if you got permission denied)
 `docker build -t tasm/tasm -f docker/Dockerfile .`  
 
 # Running the example notebook in the Docker container
